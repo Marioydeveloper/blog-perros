@@ -3,35 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="index.css">
-  <title>Document</title>
-  <style>
-    h1 {
-      color: rgb(186, 45, 45);
-    }
-    .titleperros {
-      color:rgb(43, 43, 176)
-    }
-     img {
-      border:20px solid #2ac57d ; border-radius: 20px;
-    }
-    
-  </style>
-</head>
-<body style="background-color: #2298c69c;text-align:center">
+  <link rel="stylesheet" href="style.css">
+  <title>Perros</title>
+  </head>
+<body>
   <h1 class="titleperros" >Perros</h1>
   <h1 ><u>Un gran amigo</u></h1>
 
 <img  width="400px" src="https://cvfaunia.com/wp-content/uploads/2023/07/grupo-perros-diversas-razas-tamanos-colores-mirando-camara-creada-ia-generativa.jpg" >
 
-<p> Un perro es un mamífero doméstico de la familia de los cánidos, de tamaño, forma y pelaje muy diversos, según las razas, que tiene olfato muy fino y es inteligente y muy leal a su dueño </p>
+<p class="texto"> Un perro es un mamífero doméstico de la familia de los cánidos, de tamaño, forma y pelaje muy diversos, según las razas, que tiene olfato muy fino y es inteligente y muy leal a su dueño </p>
 
 
 <a href="https://www.nationalgeographic.com.es/animales/perros" target="_blank">para saber mas</a>
   
 <hr>
 
-<a href="https://github.com/Marioydeveloper" target="_blank">Blog hecho por Mario Yanes</a>
+
+</div>
+<button class="buy-button">Tienes un Perro?</button>
+<p>
+  Este blog fue hecho por
+  <a
+    href="https://github.com/Marioydeveloper"
+    target="_blank"
+  >
+    Mario Yanes
+  </a>
+</p>
+</div>
+<script>
+function buy() {
+  let name = prompt("¿como se llama tu perro?");
+  let raza = prompt("¿De que raza es tu perro?");
+
+  alert(
+    "Con que " +
+      name +
+      " de la raza " +
+      raza +
+      " eh? "+
+      " Recuerda tratarlo con mucho cariño" 
+  );
+}
+
+let buyButton = document.querySelector(".buy-button");
+buyButton.addEventListener("click", buy);
+</script>
 
 
 
